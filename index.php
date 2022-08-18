@@ -4,7 +4,7 @@
 
                 <div class="l-main-visual p-front-main-visual">
 
-                    <img class="p-front-main-visual__img" src="img/mainvisual.jpg" alt="frontページメイン画像">
+                    <img class="p-front-main-visual__img" src="<?php echo get_template_directory_uri(); ?>/img/mainvisual.jpg" alt="frontページメイン画像">
 
                     <h1 class="p-front-main-visual__title c-mv-title">ダミーサイト</h1>
 

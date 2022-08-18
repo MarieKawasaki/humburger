@@ -112,11 +112,11 @@
 
                     <section class="p-single-photo">
 
-                        <img class="p-single-photo__main" src="img/single-burger-potato.jpg" alt="">
+                        <img class="p-single-photo__main" src="<?php echo get_template_directory_uri(); ?>/img/single-burger-potato.jpg" alt="">
 
                         <div class="p-single-photo__flex">
 
-                            <img class="p-single-photo__sub" src="img/single-burger-potato.jpg" alt="">
+                            <img class="p-single-photo__sub" src="<?php echo get_template_directory_uri(); ?>/img/single-burger-potato.jpg" alt="">
 
                             <p class="p-single-photo__text">
                                 テキストが入ります テキストが入ります テキストが入ります 
@@ -145,23 +145,23 @@
                                 テキストが入ります テキストが
                             </p>
 
-                            <img class="p-single-photo__sub" src="img/single-burger-potato.jpg" alt="">
+                            <img class="p-single-photo__sub" src="<?php echo get_template_directory_uri(); ?>/img/single-burger-potato.jpg" alt="">
 
                         </div>
 
-                        <img class="p-single-photo__second" src="img/single-burger-potato.jpg" alt="">
+                        <img class="p-single-photo__second" src="<?php echo get_template_directory_uri(); ?>/img/single-burger-potato.jpg" alt="">
 
                         <ul class="p-single-photo__list">
 
-                            <li class="p-single-photo__item"><img src="img/single-burger-potato.jpg" alt=""></li>
-                            <li class="p-single-photo__item"><img src="img/single-burger-potato.jpg" alt=""></li>
-                            <li class="p-single-photo__item"><img src="img/single-burger-potato.jpg" alt=""></li>
-                            <li class="p-single-photo__item"><img src="img/single-burger-potato.jpg" alt=""></li>
-                            <li class="p-single-photo__item"><img src="img/single-burger-potato.jpg" alt=""></li>
-                            <li class="p-single-photo__item"><img src="img/single-burger-potato.jpg" alt=""></li>
-                            <li class="p-single-photo__item"><img src="img/single-burger-potato.jpg" alt=""></li>
-                            <li class="p-single-photo__item"><img src="img/single-burger-potato.jpg" alt=""></li>
-                            <li class="p-single-photo__item"><img src="img/single-burger-potato.jpg" alt=""></li>
+                            <li class="p-single-photo__item"><img src="<?php echo get_template_directory_uri(); ?>/img/single-burger-potato.jpg" alt=""></li>
+                            <li class="p-single-photo__item"><img src="<?php echo get_template_directory_uri(); ?>/img/single-burger-potato.jpg" alt=""></li>
+                            <li class="p-single-photo__item"><img src="<?php echo get_template_directory_uri(); ?>/img/single-burger-potato.jpg" alt=""></li>
+                            <li class="p-single-photo__item"><img src="<?php echo get_template_directory_uri(); ?>/img/single-burger-potato.jpg" alt=""></li>
+                            <li class="p-single-photo__item"><img src="<?php echo get_template_directory_uri(); ?>/img/single-burger-potato.jpg" alt=""></li>
+                            <li class="p-single-photo__item"><img src="<?php echo get_template_directory_uri(); ?>/img/single-burger-potato.jpg" alt=""></li>
+                            <li class="p-single-photo__item"><img src="<?php echo get_template_directory_uri(); ?>/img/single-burger-potato.jpg" alt=""></li>
+                            <li class="p-single-photo__item"><img src="<?php echo get_template_directory_uri(); ?>/img/single-burger-potato.jpg" alt=""></li>
+                            <li class="p-single-photo__item"><img src="<?php echo get_template_directory_uri(); ?>/img/single-burger-potato.jpg" alt=""></li>
 
                         </ul>
                     </section>

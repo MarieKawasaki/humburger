@@ -85,7 +85,7 @@
 
                         <li class="p-archive-article__item">
 
-                            <img class="p-archive-article__img" src="img/archive-article-image.jpg" alt="">
+                            <img class="p-archive-article__img" src="<?php echo get_template_directory_uri(); ?>/img/archive-article-image.jpg" alt="">
 
                             <div class="p-archive-article__inner">
 
@@ -110,33 +110,7 @@
 
                         <li class="p-archive-article__item">
 
-                            <img class="p-archive-article__img" src="img/archive-article-image.jpg" alt="">
-
-                            <div class="p-archive-article__inner">
-
-                                <div class="p-archive-article__summary">
-
-                                    <h3 class="p-archive-article__title c-archive-title">見出しが入ります</h3>
-
-                                    <h4 class="p-archive-article__subtitle c-archive-subtitle">小見出しが入ります</h4>
-
-                                    <p class="p-archive-article__text c-archive-text">
-                                        テキストが入ります。テキストが入ります。
-                                        テキストが入ります。テキストが入ります。
-                                        テキストが入ります。テキストが入ります。
-                                        テキストが入ります。テキストが入ります。
-                                    </p>
-                                </div>
-
-                                <button class="p-archive-article__button c-button--read">詳しく見る</button>
-
-                            </div>
-                        </li>
-
-
-                        <li class="p-archive-article__item">
-
-                            <img class="p-archive-article__img" src="img/archive-article-image.jpg" alt="">
+                            <img class="p-archive-article__img" src="<?php echo get_template_directory_uri(); ?>/img/archive-article-image.jpg" alt="">
 
                             <div class="p-archive-article__inner">
 
@@ -162,7 +136,7 @@
 
                         <li class="p-archive-article__item">
 
-                            <img class="p-archive-article__img" src="img/archive-article-image.jpg" alt="">
+                            <img class="p-archive-article__img" src="<?php echo get_template_directory_uri(); ?>/img/archive-article-image.jpg" alt="">
 
                             <div class="p-archive-article__inner">
 
@@ -188,7 +162,33 @@
 
                         <li class="p-archive-article__item">
 
-                            <img class="p-archive-article__img" src="img/archive-article-image.jpg" alt="">
+                            <img class="p-archive-article__img" src="<?php echo get_template_directory_uri(); ?>/img/archive-article-image.jpg" alt="">
+
+                            <div class="p-archive-article__inner">
+
+                                <div class="p-archive-article__summary">
+
+                                    <h3 class="p-archive-article__title c-archive-title">見出しが入ります</h3>
+
+                                    <h4 class="p-archive-article__subtitle c-archive-subtitle">小見出しが入ります</h4>
+
+                                    <p class="p-archive-article__text c-archive-text">
+                                        テキストが入ります。テキストが入ります。
+                                        テキストが入ります。テキストが入ります。
+                                        テキストが入ります。テキストが入ります。
+                                        テキストが入ります。テキストが入ります。
+                                    </p>
+                                </div>
+
+                                <button class="p-archive-article__button c-button--read">詳しく見る</button>
+
+                            </div>
+                        </li>
+
+
+                        <li class="p-archive-article__item">
+
+                            <img class="p-archive-article__img" src="<?php echo get_template_directory_uri(); ?>/img/archive-article-image.jpg" alt="">
 
                             <div class="p-archive-article__inner">
 
