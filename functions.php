@@ -3,6 +3,13 @@
     add_theme_support( 'menus' );
     add_theme_support( 'title-tag' );
     add_theme_support( 'post-thumbnails' );
+    add_theme_support( 'html5', array( /* HTML5のタグで出力 */
+		'search-form',
+		'comment-form',
+		'comment-list',
+		'gallery',
+		'caption',
+	) );
 
     //タイトル出力
     function wpbeg_title( $title ) {
