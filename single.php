@@ -1,52 +1,27 @@
-<!DOCTYPE html>
-<html lang="ja">
-  <head>
-    <meta charset="utf-8">
-    <title>Humburger Site Single</title>
-    <meta name="description" content="新しくオープンしたハンバーガー店の紹介をするサイトです。">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="../img/favicon.ico">
-    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
-    <link href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  </head>
+<?php get_header(); ?>
 
 
-    <body>
-        <div class="wrapper">
-
-            <div class="l-container">
-
-
-                <header class="l-header p-header">
-
-                    <button class="p-header__menu-button c-button--menu">Menu</button>
-
-                    <div class="p-header__flex">
-
-                        <h1 class="p-header__logo c-logo">          
-                            <a href="#"><img src="img/logo.svg" alt="Humburgerロゴ"></a>
-                        </h1>
-
-                        <form action="#" class="p-header__search-form">
-
-                            <div class="p-header__search-box c-loupe">
-                                <input type="search" placeholder="チーズバーガー">
-                            </div>
-
-                            <button class="p-header__search-button c-button--search">検索</button>
-
-                        </form>
-                    </div>
-                    
-                    <div class="p-header__mask c-mask"></div>
-
-                </header>
-
+<?php
+    if( have_posts() ) :
+        while( have_posts() ) :
+            the_post(); ?>
+            <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                <h2 class="post__ttl"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                <ul class="post__meta">
+                    <li class="post__meta__item">
+                        <date class="post__meta__date"><?php echo get_the_date(); ?></date>
+                    </li>
+                    <li class="post__meta__item"><i class="fa fa-folder" aria-hidden="true"><?php the_category( ', ' ); ?></i></li>
+                    <li class="post__meta__item"><i class="fa fa-tag" aria-hidden="true"><?php the_tags( '' ); ?></i></li>
+                </ul>
+                <?php the_post_thumbnail(); ?>
+                <?php the_content( '続きを読む' ); ?>
+            </div>
+        <?php endwhile;
+    else :
+        ?><p>表示する記事がありません</p><?php
+    endif;
+?>
 
 
                 <div class="l-main-visual p-single-main-visual">
@@ -233,93 +208,8 @@
 
 
 
-            <aside class="l-aside">
-
-                <div class="p-aside">
-
-                    <button class="p-aside__close-button c-button--close"></button>
-
-
-                    <h2 class="p-aside__title c-aside-title">
-                        Menu
-                    </h2>
-
-                    <div class="p-aside__list">
-
-                        <div class="p-aside__item">
-
-                            <h3 class="p-aside__subtitle c-aside-subtitle">
-                                バーガー
-                            </h3>
-
-                            <ul class="p-aside__unit">
-
-                                <li class="p-aside__menu c-aside-menu"><a href="#">ハンバーガー</a></li>
-                                <li class="p-aside__menu c-aside-menu"><a href="#">チーズバーガー</a></li>
-                                <li class="p-aside__menu c-aside-menu"><a href="#">テリヤキバーガー</a></li>
-                                <li class="p-aside__menu c-aside-menu"><a href="#">アボカドバーガー</a></li>
-                                <li class="p-aside__menu c-aside-menu"><a href="#">フィッシュバーガー</a></li>
-                                <li class="p-aside__menu c-aside-menu"><a href="#">ベーコンバーガー</a></li>
-                                <li class="p-aside__menu c-aside-menu"><a href="#">チキンバーガー</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="p-aside__item">
-
-                            <h3 class="p-aside__subtitle c-aside-subtitle">
-                                サイド
-                            </h3>
-
-                            <ul class="p-aside__unit">
-
-                                <li class="p-aside__menu c-aside-menu"><a href="#">ポテト</a></li>
-                                <li class="p-aside__menu c-aside-menu"><a href="#">サラダ</a></li>
-                                <li class="p-aside__menu c-aside-menu"><a href="#">ナゲット</a></li>
-                                <li class="p-aside__menu c-aside-menu"><a href="#">コーン</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="p-aside__item">
-
-                            <h3 class="p-aside__subtitle c-aside-subtitle">
-                                ドリンク
-                            </h3>
-
-                            <ul class="p-aside__unit">
-
-                                <li class="p-aside__menu c-aside-menu"><a href="#">コーラ</a></li>
-                                <li class="p-aside__menu c-aside-menu"><a href="#">ファンタ</a></li>
-                                <li class="p-aside__menu c-aside-menu"><a href="#">オレンジ</a></li>
-                                <li class="p-aside__menu c-aside-menu"><a href="#">アップル</a></li>
-                                <li class="p-aside__menu c-aside-menu"><a href="#">紅茶（Ice/Hot）</a></li>
-                                <li class="p-aside__menu c-aside-menu"><a href="#">コーヒー（Ice/Hot）</a></li>
-                            </ul>
-                        </div>
-
-                    </div>
-
-                </div>
-            </aside>
+            <?php get_sidebar(); ?>
         </div>
 
 
-        <footer class="l-footer p-footer">
-
-            <ul class="p-footer__index">
-
-                <li class="p-footer__item c-index-item">
-                    <a href="#">ショップ情報</a>
-                </li>
-
-                <li class="p-footer__item c-index-item">
-                    <a href="#">ヒストリー</a>
-                </li>
-            </ul>
-
-            <p class="p-footer__copyright c-copyright">Copyright: RaiseTech</p>
-        </footer>
-
-        <script src="js/index.js"></script>
-        
-    </body>
-</html>
+        <?php get_footer(); ?>
