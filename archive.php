@@ -120,23 +120,25 @@
 
                     <div class="p-archive-pagination__sp">
 
+                    <?php if ( $wp_query -> max_num_pages > 1 ) : //ページ数が1を超える場合に処理 ?>
                         <div class="p-archive-pagination__left">
 
                             <div class="p-archive-pagination__arrow c-pagination--left"></div>
 
-                            <a class="p-archive-pagination__prev" href="#">前へ</a>
+                            <a class="p-archive-pagination__prev" href="#"><?php next_posts_link( '前へ' ); ?></a>
 
                         </div>
                         
                         <div class="p-archive-pagination__right">
 
-                            <a class="p-archive-pagination__next" href="#">次へ</a>
+                            <a class="p-archive-pagination__next" href="#"><?php previous_posts_link( '次へ' ); ?></a>
 
                             <div class="p-archive-pagination__arrow c-pagination--right"></div>
 
                         </div>
                         
 
+                    <?php endif; ?>
                     </div>
 
                     <div class="p-archive-pagination__pc">

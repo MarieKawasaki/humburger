@@ -7,6 +7,7 @@
             the_post(); ?>
             <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                 <h2 class="post__ttl"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                <?php the_post_thumbnail(); ?>
                 <ul class="post__meta">
                     <li class="post__meta__item">
                         <date class="post__meta__date"><?php echo get_the_date(); ?></date>
@@ -14,14 +15,10 @@
                     <li class="post__meta__item"><i class="fa fa-folder" aria-hidden="true"><?php the_category( ', ' ); ?></i></li>
                     <li class="post__meta__item"><i class="fa fa-tag" aria-hidden="true"><?php the_tags( '' ); ?></i></li>
                 </ul>
-                <?php the_post_thumbnail(); ?>
+                
                 <?php the_content( '続きを読む' ); ?>
             </div>
-        <?php endwhile;
-    else :
-        ?><p>表示する記事がありません</p><?php
-    endif;
-?>
+        
 
 
                 <div class="l-main-visual p-single-main-visual">
@@ -206,6 +203,12 @@
                 </div>
             </div>
 
+
+        <?php endwhile;
+    else :
+        ?><p>表示する記事がありません</p><?php
+    endif;
+?>
 
 
             <?php get_sidebar(); ?>

@@ -22,7 +22,7 @@
                     <div class="p-header__flex">
 
                         <h1 class="p-header__logo c-logo">          
-                            <a href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
+                            <a href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Humburgerロゴ"></a>
                         </h1>
 
                         <?php get_search_form(); ?>
