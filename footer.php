@@ -11,10 +11,12 @@
                 </li>
             </ul>
 
-            <p class="p-footer__copyright c-copyright">Copyright: RaiseTech</p>
+            <p class="p-footer__copyright c-copyright"><?php bloginfo( 'name' ); ?>2022</p>
         </footer>
 
         <script src="js/index.js"></script>
+
+        <?php wp_footer(); ?>
         
     </body>
 </html>
