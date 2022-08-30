@@ -16,14 +16,11 @@
                     <li class="post__meta__item"><i class="fa fa-tag" aria-hidden="true"><?php the_tags( '' ); ?></i></li>
                 </ul>
                 
-                <?php the_content( '続きを読む' ); ?>
             </div>
-        
-
 
                 <div class="l-main-visual p-single-main-visual">
 
-                    <img class="p-single-main-visual__img" src="img/single-mainvisual.jpg" alt="singleページメイン画像">
+                    <img class="p-single-main-visual__img" src="<?php echo get_template_directory_uri(); ?>/img/single-mainvisual.jpg" alt="singleページメイン画像">
 
                     <h1 class="p-single-main-visual__title c-mv-title">h1 チーズバーガー</h1>
 
@@ -204,12 +201,11 @@
             </div>
 
 
-        <?php endwhile;
+            <?php endwhile;
     else :
         ?><p>表示する記事がありません</p><?php
     endif;
 ?>
-
 
             <?php get_sidebar(); ?>
         </div>
