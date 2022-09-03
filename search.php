@@ -16,7 +16,7 @@
     <div class="l-main-visual p-archive-main-visual">
 
         <h2 class="p-archive-main-visual__title--first c-mv-title">Menu:</h2>
-        <h3 class="p-archive-main-visual__title--second">チーズバーガー</h3>
+        <h3 class="p-archive-main-visual__title--second"><?php echo $_GET['s']; ?></h3>
 
     </div>
 
