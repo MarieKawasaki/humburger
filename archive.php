@@ -36,81 +36,53 @@
 
                     <ul class="p-archive-article__list">
 
-                        <li class="p-archive-article__item">
 
-                            <img class="p-archive-article__img" src="<?php echo get_template_directory_uri(); ?>/img/archive-article-image.jpg" alt="">
+                    <?php
+                        if( have_posts() ) : //1.投稿データがあるかの条件分岐。
+                            while( have_posts() ) : // 2.表示する投稿データがあれば繰り返し処理開始
+                                the_post(); //3.ループ処理に必要なカウント処理等 ?>
+                                
+                            
 
-                            <div class="p-archive-article__inner">
+                                <li class="p-archive-article__item">
 
-                                <div class="p-archive-article__summary">
+                                    <img class="p-archive-article__img" src="<?php echo get_template_directory_uri(); ?>/img/archive-article-image.jpg" alt="">
 
-                                    <h3 class="p-archive-article__title c-archive-title">チーズバーガー</h3>
+                                    <div class="p-archive-article__inner">
 
-                                    <h4 class="p-archive-article__subtitle c-archive-subtitle">小見出しが入ります</h4>
+                                        <div class="p-archive-article__summary">
 
-                                    <p class="p-archive-article__text c-archive-text">
-                                        テキストが入ります。テキストが入ります。
-                                        テキストが入ります。テキストが入ります。
-                                        テキストが入ります。テキストが入ります。
-                                        テキストが入ります。テキストが入ります。
-                                    </p>
-                                </div>
+                                            <h3 class="p-archive-article__title c-archive-title">チーズバーガー</h3>
 
-                                <button class="p-archive-article__button c-button--read">詳しく見る</button>
+                                            <h4 class="p-archive-article__subtitle c-archive-subtitle">小見出しが入ります</h4>
 
-                            </div>
-                        </li>
+                                            <p class="p-archive-article__text c-archive-text">
+                                                テキストが入ります。テキストが入ります。
+                                                テキストが入ります。テキストが入ります。
+                                                テキストが入ります。テキストが入ります。
+                                                テキストが入ります。テキストが入ります。
+                                            </p>
+                                        </div>
 
-                        <li class="p-archive-article__item">
+                                        <button class="p-archive-article__button c-button--read">詳しく見る</button>
 
-                            <img class="p-archive-article__img" src="<?php echo get_template_directory_uri(); ?>/img/archive-article-image.jpg" alt="">
+                                    </div>
+                                </li>
 
-                            <div class="p-archive-article__inner">
-
-                                <div class="p-archive-article__summary">
-
-                                    <h3 class="p-archive-article__title c-archive-title">ダブルチーズバーガー</h3>
-
-                                    <h4 class="p-archive-article__subtitle c-archive-subtitle">小見出しが入ります</h4>
-
-                                    <p class="p-archive-article__text c-archive-text">
-                                        テキストが入ります。テキストが入ります。
-                                        テキストが入ります。テキストが入ります。
-                                        テキストが入ります。テキストが入ります。
-                                        テキストが入ります。テキストが入ります。
-                                    </p>
-                                </div>
-
-                                <button class="p-archive-article__button c-button--read">詳しく見る</button>
-
-                            </div>
-                        </li>
+                                
+                            <?php endwhile; // 5.繰り返し処理ここまで。投稿データがまだあればwhileに戻る。なければ終了
+                        else : //6.投稿データがなければ
+                            ?><p>表示する記事がありません</p><?php //7.ない時の処理
+                        endif; ?> //8.条件分岐終了
+                    
 
 
-                        <li class="p-archive-article__item">
+                        
 
-                            <img class="p-archive-article__img" src="<?php echo get_template_directory_uri(); ?>/img/archive-article-image.jpg" alt="">
+                        
 
-                            <div class="p-archive-article__inner">
 
-                                <div class="p-archive-article__summary">
-
-                                    <h3 class="p-archive-article__title c-archive-title">スペシャルチーズバーガー</h3>
-
-                                    <h4 class="p-archive-article__subtitle c-archive-subtitle">小見出しが入ります</h4>
-
-                                    <p class="p-archive-article__text c-archive-text">
-                                        テキストが入ります。テキストが入ります。
-                                        テキストが入ります。テキストが入ります。
-                                        テキストが入ります。テキストが入ります。
-                                        テキストが入ります。テキストが入ります。
-                                    </p>
-                                </div>
-
-                                <button class="p-archive-article__button c-button--read">詳しく見る</button>
-
-                            </div>
-                        </li>
+                        
 
                     </ul>
                 </section>

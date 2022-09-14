@@ -20,7 +20,7 @@
 
                         <ul class="p-front-article__list">
 
-                            <li class="p-front-article__item">
+                            <li class="p-front-article__item"><a href="#">
 
                                 <h2 class="p-front-article__title">Take Out</h2>
 
@@ -38,10 +38,10 @@
                                             当店のテイクアウトで利用できる商品を掲載しています
                                             当店のテイクアウトで
                                         </p>
-
+                                        </a>
                                     </li>
 
-                                    <li class="p-front-article__post">
+                                    <li class="p-front-article__post"><a href="#">
 
                                         <h3 class="p-front-article__second-title">Take OUT</h3>
 
@@ -53,7 +53,7 @@
                                             当店のテイクアウトで利用できる商品を掲載しています
                                             当店のテイクアウトで
                                         </p>
-                                        
+                                        </a>  
                                     </li>
                                 </ul>
                             </li>
