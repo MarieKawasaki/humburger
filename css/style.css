@@ -523,7 +523,7 @@ img {
   justify-content: space-between;
 }
 .p-front-article__item:nth-child(1) {
-  background-image: url(../../../img/front-three-burgers.jpg);
+  background-image: url(../img/front-three-burgers.jpg);
 }
 @media screen and (min-width: 1024px) {
   .p-front-article__item:nth-child(1) {
@@ -536,7 +536,7 @@ img {
   }
 }
 .p-front-article__item:nth-child(2) {
-  background-image: url(../../../img/front-humburger-potato.jpg);
+  background-image: url(../img/front-humburger-potato.jpg);
 }
 @media screen and (min-width: 1024px) {
   .p-front-article__item {
@@ -548,7 +548,7 @@ img {
     min-height: 1193px;
   }
 }
-.p-front-article__title {
+.p-front-article__title a {
   color: #EAEAEA;
   position: relative;
   font-family: "Roboto", sans-serif;
@@ -559,16 +559,16 @@ img {
   margin-bottom: 50px;
 }
 @media screen and (min-width: 1024px) {
-  .p-front-article__title {
+  .p-front-article__title a {
     font-size: 44px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .p-front-article__title {
+  .p-front-article__title a {
     font-size: 52px;
   }
 }
-.p-front-article__title::after {
+.p-front-article__title a::after {
   content: "";
   width: 34px;
   height: 4px;
@@ -578,18 +578,19 @@ img {
   left: 0;
 }
 @media screen and (min-width: 1024px) {
-  .p-front-article__title::after {
+  .p-front-article__title a::after {
     width: 35px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .p-front-article__title::after {
+  .p-front-article__title a::after {
     width: 63px;
     bottom: -34px;
   }
 }
 .p-front-article__inner {
   margin-bottom: 15px;
+  padding-left: 0;
 }
 .p-front-article__post {
   margin: 0 auto;
@@ -852,7 +853,7 @@ img {
   width: 100%;
   height: 283px;
   position: relative;
-  background-image: url(../../../img/front-three-burgers.jpg);
+  background-image: url("../img/front-three-burgers.jpg");
   background-size: 200%;
   background-position: left center;
 }
@@ -915,6 +916,9 @@ img {
   .p-archive-main-visual__title--second {
     left: 27%;
   }
+}
+.p-archive-main-visual__title--second .post-categories a {
+  color: #fff;
 }
 
 .p-archive-pagination__sp {

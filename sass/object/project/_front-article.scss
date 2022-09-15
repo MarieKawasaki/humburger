@@ -25,17 +25,19 @@
         justify-content: space-between;
 
         &:nth-child(1) {
-            background-image: url(../../../img/front-three-burgers.jpg);
+            background-image: url(../img/front-three-burgers.jpg);
 
             @include m.lg {
                 margin-right: 5%;
             }
+
             @media screen and (max-width: m.$lg) {
                 margin-bottom: 20px;
             }
         }
+
         &:nth-child(2) {
-            background-image: url(../../../img/front-humburger-potato.jpg);
+            background-image: url(../img/front-humburger-potato.jpg);
         }
 
         @include m.lg {
@@ -50,7 +52,7 @@
         }
     }
 
-    &__title {
+    &__title a {
         color: c.$f-article-title;
         position: relative;
         font-family: f.$roboto;
@@ -63,6 +65,7 @@
         @include m.lg {
             font-size: 44px;
         }
+
         @include m.xl {
             font-size: 52px;
         }
@@ -89,6 +92,7 @@
 
     &__inner {
         margin-bottom: 15px;
+        padding-left: 0;
     }
 
     &__post {
