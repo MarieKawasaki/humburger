@@ -46,7 +46,8 @@
 
                                 <li class="p-archive-article__item">
 
-                                    <img class="p-archive-article__img" src="<?php echo get_template_directory_uri(); ?>/img/archive-article-image.jpg" alt="">
+                                    <!-- <img class="p-archive-article__img" src="<?php echo get_template_directory_uri(); ?>/img/archive-article-image.jpg" alt=""> -->
+                                    <img class="p-archive-article__img" src="<?php the_post_thumbnail(); ?>
 
                                     <div class="p-archive-article__inner">
 
@@ -97,13 +98,13 @@
 
                                 <div class="p-archive-pagination__arrow c-pagination--left"></div>
 
-                                <a class="p-archive-pagination__prev" href="#"><?php next_posts_link( '前へ' ); ?></a>
+                                <a class="p-archive-pagination__prev" href="#"><?php previous_post_link('« %link','前へ'); ?></a>
 
                             </div>
                             
                             <div class="p-archive-pagination__right">
 
-                                <a class="p-archive-pagination__next" href="#"><?php previous_posts_link( '次へ' ); ?></a>
+                                <a class="p-archive-pagination__next" href="#"><?php next_post_link( '次へ' ); ?></a>
 
                                 <div class="p-archive-pagination__arrow c-pagination--right"></div>
 
@@ -139,6 +140,8 @@
                         
                         <?php endif; ?>
                     </div>
+
+                    <?php wp_pagenavi(); ?>
                 </section>
 
             </div>
