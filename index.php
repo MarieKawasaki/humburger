@@ -22,7 +22,7 @@
 
                             <li class="p-front-article__item">
 
-                                <h2 class="p-front-article__title"><a href="#">Take Out</a></h2>
+                                <h2 class="p-front-article__title"><a href="<?php get_term_link('take-out','category'); ?>">Take Out</a></h2>
 
                                 <ul class="p-front-article__inner">
 

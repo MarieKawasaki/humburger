@@ -11,6 +11,12 @@
 		'caption',
 	) );
 
+    register_nav_menus( array(
+        'eat-in' => 'Eat In',
+        'sidebar'   => 'サイドバー',
+        'footer' => 'フッター'
+     ) );
+
     //タイトル出力
     function wpbeg_title( $title ) {
         if ( is_front_page() && is_home() ) { //トップページなら

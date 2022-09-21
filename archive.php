@@ -46,8 +46,7 @@
 
                                 <li class="p-archive-article__item">
 
-                                    <!-- <img class="p-archive-article__img" src="<?php echo get_template_directory_uri(); ?>/img/archive-article-image.jpg" alt=""> -->
-                                    <img class="p-archive-article__img" src="<?php the_post_thumbnail(); ?>
+                                    <img class="p-archive-article__img" src=<?php the_post_thumbnail(); ?>
 
                                     <div class="p-archive-article__inner">
 
