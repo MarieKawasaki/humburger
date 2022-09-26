@@ -3,12 +3,10 @@
             <ul class="p-footer__index">
 
                 <li class="p-footer__item c-index-item">
-                    <a href="#">ショップ情報</a>
+                    <a href="#"><?php wp_nav_menu( array( 'theme_location' => 'footer_nav' ) ); ?></a>
                 </li>
 
-                <li class="p-footer__item c-index-item">
-                    <a href="#">ヒストリー</a>
-                </li>
+                
             </ul>
 
             <p class="p-footer__copyright c-copyright"><?php bloginfo( 'name' ); ?>2022</p>

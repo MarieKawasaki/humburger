@@ -12,9 +12,9 @@
 	) );
 
     register_nav_menus( array(
-        'eat-in' => 'Eat In',
-        'sidebar'   => 'サイドバー',
-        'footer' => 'フッター'
+        'top_nav' => 'トップ',
+        'sidebar_nav'   => 'サイドバー',
+        'footer_nav' => 'フッター'
      ) );
 
     //タイトル出力

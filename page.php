@@ -2,14 +2,15 @@
 
 
 
-                <div class="l-main-visual p-single-main-visual">
+                <!-- <div class="l-main-visual p-single-main-visual">
 
-                    <img class="p-single-main-visual__img" src="img/page-mainvisual.jpg" alt="singleページメイン画像">
+                    <img class="p-single-main-visual__img" src="<?php echo get_template_directory_uri(); ?>/img/page-mainvisual.jpg" alt="singleページメイン画像">
 
                     <h1 class="p-single-main-visual__title c-mv-title">ショップについて</h1>
 
-                </div>
+                </div> -->
 
+                <?php the_content(); ?>
 
                 <div class="p-single">
                     <section class="p-single-summary">
