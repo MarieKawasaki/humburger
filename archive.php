@@ -5,7 +5,9 @@
                 <div class="l-main-visual p-archive-main-visual">
 
                     <h2 class="p-archive-main-visual__title--first c-mv-title">Menu:</h2>
-                    <h3 class="p-archive-main-visual__title--second"><?php the_category(); ?></h3>
+                    <h3 class="p-archive-main-visual__title--second">
+                        <?php wp_title(''); ?>
+                    </h3>
                     
                 </div>
 
@@ -46,7 +48,7 @@
 
                                 <li class="p-archive-article__item">
 
-                                    <img class="p-archive-article__img" src=<?php the_post_thumbnail(); ?>
+                                    <img  class="p-archive-article__img" src=<?php the_post_thumbnail(); ?>
 
                                     <div class="p-archive-article__inner">
 
@@ -74,15 +76,7 @@
                         else : //6.投稿データがなければ
                             ?><p>表示する記事がありません</p><?php //7.ない時の処理
                         endif; ?> 
-                    
-
-
-                        
-
-                        
-
-
-                        
+                       
 
                     </ul>
                 </section>
@@ -92,55 +86,31 @@
 
                     <div class="p-archive-pagination__sp">
 
-                        <?php if ( $wp_query -> max_num_pages > 1 ) : //ページ数が1を超える場合に処理 ?>
-                            <div class="p-archive-pagination__left">
+                    <?php if ( $wp_query -> max_num_pages > 1 ) : //ページ数が1を超える場合に処理 ?>
+                        <div class="p-archive-pagination__left">
 
-                                <div class="p-archive-pagination__arrow c-pagination--left"></div>
 
-                                <a class="p-archive-pagination__prev" href="#"><?php previous_post_link('« %link','前へ'); ?></a>
+                            <a class="p-archive-pagination__prev" href="#"><?php previous_posts_link( '&Lt;' ); ?><?php previous_posts_link( '前へ' ); ?></a>
 
-                            </div>
-                            
-                            <div class="p-archive-pagination__right">
+                        </div>
+                        
+                        <div class="p-archive-pagination__right">
 
-                                <a class="p-archive-pagination__next" href="#"><?php next_post_link( '次へ' ); ?></a>
+                            <a class="p-archive-pagination__next" href="#"><?php next_posts_link( '次へ' ); ?><?php next_posts_link('&Gt;'); ?></a>
 
-                                <div class="p-archive-pagination__arrow c-pagination--right"></div>
+                        </div>
+                        
 
-                            </div>
-                            
-
-                        <?php endif; ?>
+                    <?php endif; ?>
                     </div>
 
                     <div class="p-archive-pagination__pc">
 
-                        <?php if ( $wp_query -> max_num_pages > 1 ) :  ?>
-                        
-                            <span class="p-archive-pagination__info">page 1/10</span>
+                        <?php wp_pagenavi(); ?>
 
-                            <div class="p-archive-pagination__arrow c-pagination--left"></div>
-
-                            <div class="p-archive-pagination__list">
-                                <a class="p-archive-pagination__num active" href="#">1</a>
-                                <a class="p-archive-pagination__num" href="#">2</a>
-                                <a class="p-archive-pagination__num" href="#">3</a>
-                                <a class="p-archive-pagination__num" href="#">4</a>
-                                <a class="p-archive-pagination__num" href="#">5</a>
-                                <a class="p-archive-pagination__num" href="#">6</a>
-                                <a class="p-archive-pagination__num" href="#">7</a>
-                                <a class="p-archive-pagination__num" href="#">8</a>
-                                <a class="p-archive-pagination__num" href="#">9</a>
-                            </div>
-                            
-
-                            <div class="p-archive-pagination__arrow c-pagination--right"></div>
-
-                        
-                        <?php endif; ?>
                     </div>
 
-                    <?php wp_pagenavi(); ?>
+                    
                 </section>
 
             </div>

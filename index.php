@@ -22,7 +22,7 @@
 
                             <li class="p-front-article__item">
 
-                                <h2 class="p-front-article__title"><a href="<?php get_term_link('take-out','category'); ?>">Take Out</a></h2>
+                                <h2 class="p-front-article__title"><?php wp_nav_menu( array( 'theme_location' => 'take_out' ) ); ?></h2>
 
                                 <ul class="p-front-article__inner">
 
@@ -62,7 +62,7 @@
                             <li class="p-front-article__item">
 
                                    
-                                <h2 class="p-front-article__title"><a href="#">Eat In</a></h2>
+                                <h2 class="p-front-article__title"><?php wp_nav_menu( array( 'theme_location' => 'eat_in' ) ); ?></h2>
 
                                 <ul class="p-front-article__inner">
 

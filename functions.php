@@ -12,7 +12,8 @@
 	) );
 
     register_nav_menus( array(
-        'top_nav' => 'トップ',
+        'eat_in' => 'イートイン',
+        'take_out' => 'テイクアウト',
         'sidebar_nav'   => 'サイドバー',
         'footer_nav' => 'フッター'
      ) );
