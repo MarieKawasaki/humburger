@@ -28,7 +28,7 @@
         padding-top: 82px;
         padding-left: 46px;
 
-        @media screen and(max-width: m.$xl){
+        @media screen and(max-width: m.$xl) {
             display: none;
         }
     }
@@ -36,18 +36,26 @@
     &__list {
         margin-top: 85px;
         margin-left: 20%;
+
+        @include m.lg {
+            margin-left: 46px;
+        }
     }
 
-    &__subtitle {
-        margin-bottom: 37px;
+    .menu {
+        padding-inline-start: 0;
+
+        a {
+            margin-bottom: 37px;
+        }
     }
 
-    &__unit {
+    .sub-menu {
         margin-left: 20px;
         margin-bottom: 40px;
     }
 
-    &__menu {
+    .menu-item {
         margin-bottom: 23px;
     }
 }

@@ -1,17 +1,27 @@
 @use "../../foundation/mixin" as m;
 @use "../../foundation/color" as c;
+@use "../../foundation/font" as f;
 
 .p-footer {
     background-color: c.$footer-bg;
 
-    &__index {
+    .menu {
         display: flex;
         margin: 0 auto;
-        width: 260px;
+        width: fit-content;
         padding-top: 40px;
+        padding-inline-start: 0%;
+
     }
 
-    &__item {
+    .menu-item {
+        a {
+            color: c.$footer-color;
+            font-family: f.$m-plus;
+            font-size: 20px;
+            line-height: 1.45;
+        }
+
         &:nth-child(1) {
             position: relative;
             margin-right: 40px;
@@ -27,9 +37,11 @@
             }
         }
     }
+
     &__copyright {
         width: 150px;
         margin: 0 auto;
         padding-top: 34px;
+        text-align: center;
     }
 }

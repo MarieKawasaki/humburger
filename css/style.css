@@ -1,3 +1,7 @@
+html {
+  box-sizing: border-box;
+}
+
 a {
   text-decoration: none;
   color: #000;
@@ -7,9 +11,14 @@ li {
   list-style: none;
 }
 
-html, body {
+html,
+body {
   font-size: 100%;
   overflow-x: hidden;
+}
+
+body {
+  margin: 0;
 }
 
 img {
@@ -91,7 +100,6 @@ img {
 
 .l-header {
   width: 100%;
-  height: 217px;
 }
 
 .l-main-visual {
@@ -351,14 +359,22 @@ img {
   margin-top: 85px;
   margin-left: 20%;
 }
-.p-aside__subtitle {
+@media screen and (min-width: 1024px) {
+  .p-aside__list {
+    margin-left: 46px;
+  }
+}
+.p-aside .menu {
+  padding-inline-start: 0;
+}
+.p-aside .menu a {
   margin-bottom: 37px;
 }
-.p-aside__unit {
+.p-aside .sub-menu {
   margin-left: 20px;
   margin-bottom: 40px;
 }
-.p-aside__menu {
+.p-aside .menu-item {
   margin-bottom: 23px;
 }
 
@@ -385,17 +401,24 @@ img {
 .p-footer {
   background-color: #9D8670;
 }
-.p-footer__index {
+.p-footer .menu {
   display: flex;
   margin: 0 auto;
-  width: 260px;
+  width: fit-content;
   padding-top: 40px;
+  padding-inline-start: 0%;
 }
-.p-footer__item:nth-child(1) {
+.p-footer .menu-item a {
+  color: #fff;
+  font-family: "M PLUS 1p", sans-serif;
+  font-size: 20px;
+  line-height: 1.45;
+}
+.p-footer .menu-item:nth-child(1) {
   position: relative;
   margin-right: 40px;
 }
-.p-footer__item:nth-child(1)::after {
+.p-footer .menu-item:nth-child(1)::after {
   content: "";
   width: 1px;
   height: 18px;
@@ -408,6 +431,7 @@ img {
   width: 150px;
   margin: 0 auto;
   padding-top: 34px;
+  text-align: center;
 }
 
 .p-front-acces {
@@ -464,6 +488,11 @@ img {
   color: #fff;
   font-family: "M PLUS 1p", sans-serif;
 }
+@media screen and (min-width: 1280px) {
+  .p-front-acces__info {
+    width: 60%;
+  }
+}
 .p-front-acces__title {
   padding: 40px;
   font-size: 20px;
@@ -496,12 +525,6 @@ img {
   font-size: 14px;
   line-height: 2.35;
 }
-@media screen and (min-width: 1280px) {
-  .p-front-acces__text {
-    width: 60%;
-  }
-}
-
 .p-front-article {
   margin: 0 20px 49px 20px;
 }
@@ -653,10 +676,12 @@ img {
   background-color: #FFF7EF;
   position: relative;
   padding-top: 40px;
+  padding-bottom: 38px;
 }
 @media screen and (min-width: 1280px) {
   .p-header {
     padding-top: 67px;
+    padding-bottom: 0;
   }
 }
 .p-header__menu-button {
@@ -674,7 +699,7 @@ img {
   .p-header__flex {
     display: flex;
     justify-content: space-between;
-    margin: 0 31px 66px 65px;
+    padding: 0 31px 66px 65px;
   }
 }
 .p-header__logo {
