@@ -1,4 +1,4 @@
-<footer class="l-footer p-footer">
+        <footer class="l-footer p-footer">
 
             
             <?php wp_nav_menu( array( 'theme_location' => 'footer_nav' ) ); ?>
