@@ -50,9 +50,11 @@
         }
     }
 
-    .sub-menu {
+    .menu-item-type-taxonomy>a {
         margin-left: 20px;
         margin-bottom: 40px;
+        display: block;
+        margin-top: 40px;
     }
 
     .menu-item {

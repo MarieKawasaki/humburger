@@ -8,8 +8,8 @@
                             <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                                 <div class="l-main-visual p-single-main-visual">
 
-                                    <img class="p-single-main-visual__img" src="<?php the_post_thumbnail(); ?>" alt="singleページメイン画像">
-                                    <h1 class="p-single-main-visual__title c-mv-title">h1<?php the_title(); ?></h1>
+                                <?php the_post_thumbnail(); ?>
+                                <h1 class="p-single-main-visual__title c-mv-title">h1<?php the_title(); ?></h1>
 
                                 </div>
 
