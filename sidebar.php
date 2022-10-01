@@ -1,4 +1,4 @@
-<aside class="l-aside">
+<!-- <aside class="l-aside"> -->
 
     <div class="p-aside">
 
@@ -16,4 +16,4 @@
         </div>
 
     </div>
-</aside>
+<!-- </aside> -->

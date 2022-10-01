@@ -2,10 +2,14 @@ html,
 body {
     font-size: 100%;
     overflow-x: hidden;
+
 }
 
 body {
     margin: 0;
+    padding-inline-start: 0;
+    display: flex;
+    flex-flow: column;
 }
 
 img {
@@ -15,4 +19,5 @@ img {
 
 .wrapper {
     display: flex;
+    height: 100%;
 }

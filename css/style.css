@@ -19,6 +19,9 @@ body {
 
 body {
   margin: 0;
+  padding-inline-start: 0;
+  display: flex;
+  flex-flow: column;
 }
 
 img {
@@ -28,6 +31,7 @@ img {
 
 .wrapper {
   display: flex;
+  height: 100%;
 }
 
 .l-aside {
@@ -118,6 +122,9 @@ img {
   font-size: 20px;
   line-height: 1.3;
   color: #707070;
+  border: none;
+  cursor: pointer;
+  background-color: #FFF7EF;
 }
 @media screen and (min-width: 1024px) {
   .c-button--menu {
@@ -324,11 +331,11 @@ img {
 }
 
 .p-aside {
-  position: absolute;
   top: 0;
   right: 0;
   z-index: 20;
   width: 20%;
+  background-color: #F2EDE9;
 }
 @media screen and (max-width: 1280px) {
   .p-aside {
@@ -530,6 +537,9 @@ img {
 }
 .p-front-article {
   margin: 0 20px 49px 20px;
+}
+.p-front-article__list {
+  padding-inline-start: 0;
 }
 @media screen and (min-width: 1024px) {
   .p-front-article__list {

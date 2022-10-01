@@ -6,6 +6,8 @@
     margin: 0 20px 49px 20px;
 
     &__list {
+        padding-inline-start: 0;
+
         @include m.lg {
             display: flex;
             width: 95%;

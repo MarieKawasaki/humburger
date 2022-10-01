@@ -38,8 +38,9 @@
         wp_enqueue_style( 'robot','//fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap',array(),'' );
         wp_enqueue_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', array(), '4.7.0' );
         wp_enqueue_style( 'rtbread',get_theme_file_uri( '/css/style.css' ), array() );
-        wp_enqueue_script( 'jquery',get_theme_file_uri( '/js/jquery-3.3.2.min.js' ),'jquery', true );
-        wp_enqueue_script( 'script',get_theme_file_uri( '/js/index.js' ),'jquery','1,1,1', true );
+        wp_enqueue_script( 'jquery',get_theme_file_uri( '/js/jquery-3.6.1.min.js' ),'jquery', true );
+        wp_enqueue_script( 'index',get_theme_file_uri( '/js/index.js' ),'jquery',$theme_version, true );
     }
     
     add_action( 'wp_enqueue_scripts', 'wpbeg_script' );
+
