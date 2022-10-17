@@ -1,0 +1,126 @@
+@use "../../foundation/mixin" as m;
+@use "../../foundation/color" as c;
+@use "../../foundation/font" as f;
+
+
+
+.wp-block-cover {
+    margin-bottom: 50px;
+
+
+    .wp-block-cover__inner-container {
+        .has-text-align-left {
+            text-align: center;
+            font-family: f.$m-plus;
+            font-size: 36px;
+            line-height: 1.5;
+            font-weight: bold;
+
+            @include m.lg {
+                text-align: left;
+                padding-left: 86px;
+                font-size: 60px;
+                line-height: 1.46;
+            }
+        }
+    }
+
+}
+
+.page-margin {
+    margin: 0 20px;
+
+    @include m.lg {
+        margin: 0 60px;
+    }
+
+    @include m.xl {
+        margin: 0 100px;
+    }
+}
+
+.wp-block-columns {
+    margin-bottom: 0;
+}
+
+.page-p {
+    margin-top: 30px;
+    margin-bottom: 34px;
+
+    @include m.lg {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+}
+
+.page-h4,
+.page-h6 {
+    margin-top: 31px;
+    margin-bottom: 30px;
+
+    @include m.lg {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+}
+
+.wp-block-quote {
+    padding: 30px 16px 30px 20px;
+    background-color: c.$s-html-bg;
+
+    @include m.lg {
+        padding: 50px 56px 60px 50px;
+    }
+
+    cite {
+        margin-top: 30px;
+        font-size: 16px;
+        line-height: 1.43;
+        color: #4A6C9B;
+        border-bottom: 1px solid #4A6C9B;
+        display: inline-block;
+
+        @include m.lg {
+            margin-top: 60px;
+        }
+    }
+}
+
+.wp-block-image {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    @include m.lg {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+}
+
+.has-media-on-the-right {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    @include m.lg {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+}
+
+.has-small-font-size {
+    font-size: 16px;
+    line-height: 1.43;
+}
+
+.page-photo-resize {
+    border: 2px red solid;
+    width: 45%;
+    flex-grow: 0;
+
+    @media screen and (max-width: (m.$lg)) {
+        width: 45%;
+    }
+
+    @media screen and (max-width: (m.$sm)) {
+        width: 100%;
+    }
+}

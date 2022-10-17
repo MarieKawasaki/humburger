@@ -693,8 +693,10 @@ img {
 .p-aside .menu a {
   margin-bottom: 37px;
 }
-.p-aside .menu-item-type-taxonomy > a {
+.p-aside .sub-menu {
   margin-left: 20px;
+}
+.p-aside .menu-item-type-taxonomy > a {
   margin-bottom: 40px;
   display: block;
   margin-top: 40px;
@@ -1321,6 +1323,133 @@ img {
 .p-archive-pagination .active {
   background-color: #3C2B1C;
   color: #fff;
+}
+
+.wp-block-cover {
+  margin-bottom: 50px;
+}
+.wp-block-cover .wp-block-cover__inner-container .has-text-align-left {
+  text-align: center;
+  font-family: "M PLUS 1p", sans-serif;
+  font-size: 36px;
+  line-height: 1.5;
+  font-weight: bold;
+}
+@media screen and (min-width: 1024px) {
+  .wp-block-cover .wp-block-cover__inner-container .has-text-align-left {
+    text-align: left;
+    padding-left: 86px;
+    font-size: 60px;
+    line-height: 1.46;
+  }
+}
+
+.page-margin {
+  margin: 0 20px;
+}
+@media screen and (min-width: 1024px) {
+  .page-margin {
+    margin: 0 60px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .page-margin {
+    margin: 0 100px;
+  }
+}
+
+.wp-block-columns {
+  margin-bottom: 0;
+}
+
+.page-p {
+  margin-top: 30px;
+  margin-bottom: 34px;
+}
+@media screen and (min-width: 1024px) {
+  .page-p {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+
+.page-h4,
+.page-h6 {
+  margin-top: 31px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1024px) {
+  .page-h4,
+.page-h6 {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+
+.wp-block-quote {
+  padding: 30px 16px 30px 20px;
+  background-color: #f5f5f5;
+}
+@media screen and (min-width: 1024px) {
+  .wp-block-quote {
+    padding: 50px 56px 60px 50px;
+  }
+}
+.wp-block-quote cite {
+  margin-top: 30px;
+  font-size: 16px;
+  line-height: 1.43;
+  color: #4A6C9B;
+  border-bottom: 1px solid #4A6C9B;
+  display: inline-block;
+}
+@media screen and (min-width: 1024px) {
+  .wp-block-quote cite {
+    margin-top: 60px;
+  }
+}
+
+.wp-block-image {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1024px) {
+  .wp-block-image {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+
+.has-media-on-the-right {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1024px) {
+  .has-media-on-the-right {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+
+.has-small-font-size {
+  font-size: 16px;
+  line-height: 1.43;
+}
+
+.page-photo-resize {
+  border: 2px red solid;
+  width: 45%;
+  flex-grow: 0;
+}
+@media screen and (max-width: 1024px) {
+  .page-photo-resize {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .page-photo-resize {
+    width: 100%;
+  }
 }
 
 .p-single-main-visual {
