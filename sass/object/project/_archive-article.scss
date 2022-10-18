@@ -8,12 +8,9 @@
     @include m.lg {
         margin: 37px 40px 106px 40px;
     }
+
     @include m.xl {
         margin: 70px 100px 150px 100px;
-    }
-
-    &__list {
-        
     }
 
     &__item {
@@ -26,18 +23,24 @@
 
     &__img {
         vertical-align: top;
+        height: 300px;
+
+        @include m.md {
+            height: 400px;
+        }
 
         @include m.lg {
             width: 50%;
+            height: 472px;
         }
     }
 
     &__inner {
         background-color: c.$a-article-bg;
-        padding-bottom: 5%;
 
         @include m.lg {
             width: 50%;
+            height: inherit;
         }
     }
 
@@ -48,6 +51,7 @@
         @include m.lg {
             margin: 0 16% 13% 9%;
         }
+
         @include m.xl {
             margin: 0 15% 13% 9%;
             padding-top: 11%;
@@ -69,10 +73,6 @@
             font-size: 24px;
             line-height: 1.5;
         }
-    }
-
-    &__text {
-
     }
 
     &__button {

@@ -14,6 +14,7 @@
         top: 0;
         right: -44%;
         opacity: 1;
+        transition: all .5s;
     }
 
     &__close-button {
@@ -70,15 +71,13 @@
     position: absolute;
     z-index: 20;
     background-color: c.$aside-bg;
+    padding-top: 50px;
+    width: 90%;
+    right: 0;
+    opacity: 1;
 
     @media screen and (max-width: m.$xl) {
-        right: 0;
-        opacity: 1;
-        width: 100%;
-    }
-
-    @media screen and (max-width: m.$lg) {
-        width: 100%;
+        // width: 100%;
         right: 0;
         opacity: 1;
     }

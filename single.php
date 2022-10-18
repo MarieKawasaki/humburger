@@ -142,14 +142,25 @@
 
                                     <section class="p-single-html">
 
-                                        <code class="p-single-html__content">
+                                        <pre class="p-single-html__content">
+                                            <code>
+    &lt;html&gt;
+            &lt;head&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+            &lt;/body&gt;
+    &lt;/html&gt;
+                                            </code>
+                                        </pre>
+
+                                        <!-- <code class="p-single-html__content">
                                             <pre>&lt;html&gt;
                                     &lt;head&gt;
                                     &lt;/head&gt;
                                     &lt;body&gt;
                                     &lt;/body&gt;
                                     &lt;/html&gt;</pre>
-                                        </code>
+                                        </code> -->
 
                                     </section>
 
