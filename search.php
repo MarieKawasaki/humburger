@@ -10,7 +10,7 @@
                
 
     <?php if ( empty( get_search_query() ) ) : // 検索キーワードがないとき ?>
-        <p>検索キーワードが未入力です。</p>
+        <p class="search-margin">検索キーワードが未入力です。</p>
         <?php else : // 検索キーワードがあるとき ?>
             <?php echo '“'.$_GET['s'] .'”の検索結果は：'.$wp_query->found_posts .'件です。'; // 検索キーワードと該当件数を表示?>
             <?php if ( have_posts() ) :  // 該当するエントリーがあるとき ?>
@@ -36,13 +36,13 @@
                                 </p>
                             </div>
 
-                            <button class="p-archive-article__button c-button--read">詳しく見る</button>
+                            <a class="p-archive-article__button c-button--read" href=<?php echo get_permalink( ); ?>>詳しく見る</a>
 
                         </div>
                     </li>
                 <?php endwhile; ?>
                 <?php else : // 該当するエントリーがないとき ?>
-                    <p>検索されたキーワードにマッチする記事はありませんでした</p>
+                    <p class="search-margin">検索されたキーワードにマッチする記事はありませんでした。</p>
             <?php endif; ?>
     <?php endif;?>
 

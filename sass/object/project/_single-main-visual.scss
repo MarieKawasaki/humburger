@@ -25,6 +25,8 @@
         font-size: 36px;
         line-height: 1.5;
         font-weight: bold;
+        text-shadow: 1px 1px 1px #fcba03;
+
 
         @include m.lg {
             font-size: 60px;

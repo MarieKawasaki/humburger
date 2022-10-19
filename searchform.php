@@ -1,4 +1,4 @@
-<form action="<?php echo home_url('/'); ?>" class="p-header__search-form" method="get">
+<form action="<?php echo esc_url(home_url('/')); ?>" class="p-header__search-form" method="get">
 
                             <div class="p-header__search-box c-loupe">
                                 <input type="search" placeholder="チーズバーガー"<?php if(!is_search()){ echo 'SEARCH';} ?> name="s" id="s" value="<?php if(is_search()){ echo get_search_query();} ?>"/>

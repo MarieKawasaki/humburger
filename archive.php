@@ -66,7 +66,7 @@
                                             </p>
                                         </div>
 
-                                        <button class="p-archive-article__button c-button--read">詳しく見る</button>
+                                        <a class="p-archive-article__button c-button--read" href=<?php echo get_permalink( ); ?>>詳しく見る</a>
 
                                     </div>
                                 </li>

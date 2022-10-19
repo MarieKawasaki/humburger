@@ -42,6 +42,11 @@
             width: 50%;
             height: inherit;
         }
+
+
+        @media screen and (max-width: m.$lg) {
+            padding-bottom: 50px;
+        }
     }
 
     &__summary {
@@ -78,15 +83,15 @@
     &__button {
         margin: 0 auto;
         font-size: 16px;
-        line-height: 1;
+        line-height: 1.2;
         width: 164px;
         height: 42px;
         display: block;
+        text-align: center;
 
         @include m.xl {
             width: 292px;
             height: 76px;
-            line-height: 2;
         }
     }
 }

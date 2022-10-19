@@ -68,11 +68,11 @@
 
                                     <section class="p-single-photo">
 
-                                        <img class="p-single-photo__main" src="<?php echo get_template_directory_uri(); ?>/img/single-burger-potato.jpg" alt="">
+                                        <img class="p-single-photo__main" src="<?php echo esc_url(get_template_directory_uri()."/img/single-burger-potato.jpg"); ?>" alt="">
 
                                         <div class="p-single-photo__flex">
 
-                                            <img class="p-single-photo__sub" src="<?php echo get_template_directory_uri(); ?>/img/single-burger-potato.jpg" alt="">
+                                            <img class="p-single-photo__sub" src="<?php echo  esc_url(get_template_directory_uri()."/img/single-burger-potato.jpg"); ?>" alt="">
 
                                             <p class="p-single-photo__text">
                                                 テキストが入ります テキストが入ります テキストが入ります 
@@ -101,23 +101,23 @@
                                                 テキストが入ります テキストが
                                             </p>
 
-                                            <img class="p-single-photo__sub" src="<?php echo get_template_directory_uri(); ?>/img/single-burger-potato.jpg" alt="">
+                                            <img class="p-single-photo__sub" src="<?php echo  esc_url(get_template_directory_uri()."/img/single-burger-potato.jpg"); ?>" alt="">
 
                                         </div>
 
-                                        <img class="p-single-photo__second" src="<?php echo get_template_directory_uri(); ?>/img/single-burger-potato.jpg" alt="">
+                                        <img class="p-single-photo__second" src="<?php echo  esc_url(get_template_directory_uri()."/img/single-burger-potato.jpg"); ?>" alt="">
 
                                         <ul class="p-single-photo__list">
 
-                                            <li class="p-single-photo__item"><img src="<?php echo get_template_directory_uri(); ?>/img/single-burger-potato.jpg" alt=""></li>
-                                            <li class="p-single-photo__item"><img src="<?php echo get_template_directory_uri(); ?>/img/single-burger-potato.jpg" alt=""></li>
-                                            <li class="p-single-photo__item"><img src="<?php echo get_template_directory_uri(); ?>/img/single-burger-potato.jpg" alt=""></li>
-                                            <li class="p-single-photo__item"><img src="<?php echo get_template_directory_uri(); ?>/img/single-burger-potato.jpg" alt=""></li>
-                                            <li class="p-single-photo__item"><img src="<?php echo get_template_directory_uri(); ?>/img/single-burger-potato.jpg" alt=""></li>
-                                            <li class="p-single-photo__item"><img src="<?php echo get_template_directory_uri(); ?>/img/single-burger-potato.jpg" alt=""></li>
-                                            <li class="p-single-photo__item"><img src="<?php echo get_template_directory_uri(); ?>/img/single-burger-potato.jpg" alt=""></li>
-                                            <li class="p-single-photo__item"><img src="<?php echo get_template_directory_uri(); ?>/img/single-burger-potato.jpg" alt=""></li>
-                                            <li class="p-single-photo__item"><img src="<?php echo get_template_directory_uri(); ?>/img/single-burger-potato.jpg" alt=""></li>
+                                            <li class="p-single-photo__item"><img src="<?php echo  esc_url(get_template_directory_uri()."/img/single-burger-potato.jpg"); ?>" alt=""></li>
+                                            <li class="p-single-photo__item"><img src="<?php echo  esc_url(get_template_directory_uri()."/img/single-burger-potato.jpg"); ?>" alt=""></li>
+                                            <li class="p-single-photo__item"><img src="<?php echo  esc_url(get_template_directory_uri()."/img/single-burger-potato.jpg"); ?>" alt=""></li>
+                                            <li class="p-single-photo__item"><img src="<?php echo  esc_url(get_template_directory_uri()."/img/single-burger-potato.jpg"); ?>" alt=""></li>
+                                            <li class="p-single-photo__item"><img src="<?php echo  esc_url(get_template_directory_uri()."/img/single-burger-potato.jpg"); ?>" alt=""></li>
+                                            <li class="p-single-photo__item"><img src="<?php echo  esc_url(get_template_directory_uri()."/img/single-burger-potato.jpg"); ?>" alt=""></li>
+                                            <li class="p-single-photo__item"><img src="<?php echo  esc_url(get_template_directory_uri()."/img/single-burger-potato.jpg"); ?>" alt=""></li>
+                                            <li class="p-single-photo__item"><img src="<?php echo  esc_url(get_template_directory_uri()."/img/single-burger-potato.jpg"); ?>" alt=""></li>
+                                            <li class="p-single-photo__item"><img src="<?php echo  esc_url(get_template_directory_uri()."/img/single-burger-potato.jpg"); ?>" alt=""></li>
 
                                         </ul>
                                     </section>
@@ -153,14 +153,6 @@
                                             </code>
                                         </pre>
 
-                                        <!-- <code class="p-single-html__content">
-                                            <pre>&lt;html&gt;
-                                    &lt;head&gt;
-                                    &lt;/head&gt;
-                                    &lt;body&gt;
-                                    &lt;/body&gt;
-                                    &lt;/html&gt;</pre>
-                                        </code> -->
 
                                     </section>
 
@@ -194,6 +186,7 @@
                                             boldboldboldboldboldboldbold
                                         </p>
 
+                                        <?php wp_link_pages(); ?>
                                     </section>
                                 </div>
                             </div>
