@@ -72,10 +72,38 @@
 
     .pages {
         padding-right: 100px;
+        font-weight: bold;
+        color: c.$a-pagination-color;
     }
 
     a,
     .current {
-        padding-right: 30px;
+        margin-right: 30px;
+    }
+
+    .current,
+    .page {
+        border: 1px solid c.$a-pagination-color;
+        padding: 10px 13px;
+        color: c.$a-pagination-color;
+    }
+
+    .current {
+        background-color: c.$a-article-bg;
+        color: #fff;
+    }
+
+    .previouspostslink,
+    .nextpostslink {
+        color: c.$a-pagination-color;
+        font-size: 36px;
+        line-height: 64px;
+        height: 20px;
+    }
+
+    .pages,
+    .page,
+    .current {
+        line-height: 64px;
     }
 }

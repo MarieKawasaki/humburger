@@ -1,7 +1,6 @@
 <?php
     //テーマサポート
     add_theme_support( 'title-tag' );
-    add_theme_support( "custom-header", $args );
     add_theme_support( 'post-thumbnails' );
     add_theme_support( 'html5', array( /* HTML5のタグで出力 */
 		'search-form',
@@ -34,7 +33,7 @@
         wp_enqueue_style('fontsgoogleapis','fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;700&family=Roboto:wght@700&display=swap');
         wp_enqueue_style( 'stylecss',get_theme_file_uri( '/css/style.css' ), array('ress') ,'',false);
         wp_enqueue_script( 'jquery',get_theme_file_uri( '/js/jquery-3.6.1.min.js' ),'','', true );
-        wp_enqueue_script( 'index',get_theme_file_uri( '/js/index.js' ),'jquery',$theme_version, true );
+        wp_enqueue_script( 'index',get_theme_file_uri( '/js/index.js' ),'jquery','', true );
         add_theme_support( 'automatic-feed-links' );
     }
     

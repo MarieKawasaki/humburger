@@ -10,4 +10,5 @@ jQuery(function ($) {
         $('.c-mask').fadeOut();
         $('.p-aside,.l-aside').removeClass('open');
     });
+
 });

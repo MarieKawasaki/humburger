@@ -12,7 +12,16 @@
     <?php if ( empty( get_search_query() ) ) : // 検索キーワードがないとき ?>
         <p class="search-margin">検索キーワードが未入力です。</p>
         <?php else : // 検索キーワードがあるとき ?>
-            <?php echo '“'.$_GET['s'] .'”の検索結果は：'.$wp_query->found_posts .'件です。'; // 検索キーワードと該当件数を表示?>
+            <section class="p-archive-content">
+                <h4 class="p-archive-content__title">小見出しが入ります</h4>
+
+                <p class="p-archive-content__text">
+                    テキストが入ります。テキストが入ります。
+                    テキストが入ります。テキストが入ります。
+                    テキストが入ります。テキストが入ります。
+                    テキストが入ります。テキストが入ります。
+                </p>
+            </section>
             <?php if ( have_posts() ) :  // 該当するエントリーがあるとき ?>
                 <?php while ( have_posts() ) : the_post(); ?>
                      <!-- get_template_part( 'template-parts/content' ); -->

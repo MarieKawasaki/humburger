@@ -1359,10 +1359,34 @@ img {
 }
 .wp-pagenavi .pages {
   padding-right: 100px;
+  font-weight: bold;
+  color: #707070;
 }
 .wp-pagenavi a,
 .wp-pagenavi .current {
-  padding-right: 30px;
+  margin-right: 30px;
+}
+.wp-pagenavi .current,
+.wp-pagenavi .page {
+  border: 1px solid #707070;
+  padding: 10px 13px;
+  color: #707070;
+}
+.wp-pagenavi .current {
+  background-color: #3C2B1C;
+  color: #fff;
+}
+.wp-pagenavi .previouspostslink,
+.wp-pagenavi .nextpostslink {
+  color: #707070;
+  font-size: 36px;
+  line-height: 64px;
+  height: 20px;
+}
+.wp-pagenavi .pages,
+.wp-pagenavi .page,
+.wp-pagenavi .current {
+  line-height: 64px;
 }
 
 .wp-block-cover {
